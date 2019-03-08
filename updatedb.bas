@@ -211,7 +211,7 @@ Public Function test12()
 End Function
 
 Public Function CheckIllChar(ByVal checkerstr As String)
-'Check for space area which is not a space
+'Check for space area which is not a space and illegal characters non uft8
  
 Dim abData() As Byte
 Dim ChrPos As String
@@ -395,7 +395,7 @@ Dim A As String * 1
 Dim B As String * 1
 Dim i As Integer
 Dim S As String
-'Const AccChars = "ŠšŸÀÁÂÃÄÅÇÈÉÊËÌÍÎÏĞÑÒÓÔÕÖÙÚÛÜİàáâãäåçèéêëìíîïğñòóôõöùúûüıÿ"
+'Const AccChars = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 'Const RegChars = "SZszYAAAAAACEEEEIIIIDNOOOOOUUUUYaaaaaaceeeeiiiidnooooouuuuyy"
 Const AccChars = "" ' using less characters is faster
 Const RegChars = ".."
